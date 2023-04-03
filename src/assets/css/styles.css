@@ -1,0 +1,79 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+    background: #fff !important;
+}
+.login-form {
+    max-width: 300px;
+    position: fixed;
+    z-index: 999;
+    overflow: visible;
+    margin: auto;
+    padding-top: 15%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+  
+.login-form-forgot {
+    float: right;
+}
+
+.login-lock-icon{
+    position: fixed;
+    z-index: 999;
+    overflow: visible;
+    float: center;
+    padding-top: 10%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    color: #F7AB00;
+}
+  
+.ant-col-rtl .login-form-forgot {
+    float: left;
+}
+  
+.login-form-button {
+    width: 100%;
+}
+
+.upload_an_image #upload_image{
+    border-radius: 50%;
+}
+
+
+
+.ant-card-body .date{
+    float: right;
+}
+
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background-color: #000;
+}
+
+.ant-table-filter-dropdown{
+    position: relative;
+    /* left: 100px; */
+    display: flex;
+}
+
+.gradient-custom-2 {
+/* fallback for old browsers */
+background: #fbc2eb;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+}
