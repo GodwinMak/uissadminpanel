@@ -65,7 +65,7 @@ const Projects = () => {
     (row)=>{
       // setRowData(row);
       localStorage.setItem('userEditData', JSON.stringify(row.key));
-      navigate("/dasboard/editProject")
+      navigate("/dashboard/editProject")
   },[])
 
   const columns = [

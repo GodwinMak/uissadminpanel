@@ -141,7 +141,6 @@ const columns = [
     render: (text, record) => (
       <Space size="middle">
         <><DeleteFilled style={{"color":"red","fontSize":"16px"}} onClick={() =>handelDeleteRow(record)}/></>
-        <><EditFilled style={{"color":"blue","fontSize":"16px"}} onClick={()=> handleEditRow(record)}/></>
       </Space>
     ),
   },
