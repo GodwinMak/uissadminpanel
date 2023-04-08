@@ -63,7 +63,7 @@ const Members = () => {
     (row)=>{
       console.log(row.key);
       localStorage.setItem('userEditData', JSON.stringify(row.key));
-      navigate("/panel/editMember")
+      navigate("/dashboard/editMember")
   },[])
 
   const columns = [
