@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Table, Space, Button, Input} from 'antd';
 import {
-    EyeFilled, DeleteFilled, EditFilled, SearchOutlined
+     DeleteFilled, EditFilled, SearchOutlined
 } from '@ant-design/icons';
 import {AiOutlineUserAdd} from "react-icons/ai"
 import axios from 'axios';
@@ -66,11 +66,7 @@ const navigate = useNavigate();
       localStorage.setItem('userEditData', JSON.stringify(row.key));
       navigate("/dashboardx/editleader")
   },[])
-  const handleViewRow = React.useCallback(
-        (row)=>{
-            localStorage.setItem('rowId', JSON.stringify(row.key));
-            navigate("/dasboard/viewLeader");
-    },[])
+ 
   const columns = [
     {
         dataIndex: 'image',
@@ -145,9 +141,8 @@ const navigate = useNavigate();
         key: 'action',
         render: (text, record) => (
             <Space size="middle">
-                <Link><EyeFilled style={{ "color": "green", "fontSize": "16px" }} onClick={()=> handleViewRow(record)}/></Link>
-                <Link><DeleteFilled style={{ "color": "red", "fontSize": "16px" }} onClick={()=> handelDeleteRow(record)} /></Link>
-                <Link><EditFilled style={{ "color": "blue", "fontSize": "16px" }} onClick={()=> handleEditRow(record)} /></Link>
+                <><DeleteFilled style={{ "color": "red", "fontSize": "16px" }} onClick={()=> handelDeleteRow(record)} /></>
+                <><EditFilled style={{ "color": "blue", "fontSize": "16px" }} onClick={()=> handleEditRow(record)} /></>
             </Space>
         ),
     },

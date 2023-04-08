@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Table,  Space, Button, Input } from 'antd';
 import {
-    EyeFilled, DeleteFilled, EditFilled, SearchOutlined
+     DeleteFilled, EditFilled, SearchOutlined
 } from '@ant-design/icons';
 import axios from 'axios';
 import DefaultPic from "../../assets/images/defaultPic.png"
@@ -65,11 +65,7 @@ const navigate = useNavigate();
             navigate("/dashboard/editEvent")
     },[navigate])
 
-    const handleViewRow = React.useCallback(
-        (row)=>{
-            localStorage.setItem('rowId', JSON.stringify(row.key));
-            navigate("/dashboard/viewEvent");
-    },[navigate])
+    
 
    const columns = [
         {
@@ -155,7 +151,6 @@ const navigate = useNavigate();
             key: 'action',
             render: (text, record) => (
                 <Space size="middle">
-                    <><EyeFilled style={{"color":"green","fontSize":"16px"}} onClick={()=> handleViewRow(record)} /></>
                     < ><DeleteFilled style={{"color":"red","fontSize":"16px"}} onClick={()=> handelDeleteRow(record)}/></>
                     <><EditFilled style={{"color":"blue","fontSize":"16px"}} onClick={()=> handleEditRow(record)}/></>
                 </Space>

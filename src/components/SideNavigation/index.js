@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import {SlChart, SlLayers, SlRocket, SlCalender} from "react-icons/sl"
+import {SlChart, SlRocket, SlCalender} from "react-icons/sl"
 import {TbUsers} from "react-icons/tb"
 import {FaUsers} from "react-icons/fa"
 import {FiTool} from "react-icons/fi"
@@ -85,10 +85,10 @@ const SideNav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link  className="nav-link">
+              {/* <Link  className="nav-link">
                 <SlLayers className="nav-icon" />
                 <p>Categories</p>
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </li>
@@ -107,10 +107,10 @@ const SideNav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link  className="nav-link">
+              {/* <Link  className="nav-link">
                 <TbUsers className="nav-icon" />
                 <p>Owners</p>
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </li>
@@ -129,10 +129,10 @@ const SideNav = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link">
+              {/* <Link className="nav-link">
                 <TbUsers className="nav-icon" />
                 <p>Hosts</p>
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </li>

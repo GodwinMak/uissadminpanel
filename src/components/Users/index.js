@@ -7,6 +7,7 @@ import axios from 'axios';
 import DefaultPic from "../../assets/images/defaultPic.png"
 import "../../assets/css/styles.css";
 
+
 function Users(){
 
 const naviagate = useNavigate();
@@ -139,8 +140,8 @@ const columns = [
     key: 'action',
     render: (text, record) => (
       <Space size="middle">
-        <Link ><DeleteFilled style={{"color":"red","fontSize":"16px"}} onClick={() =>handelDeleteRow(record)}/></Link>
-        <Link><EditFilled style={{"color":"blue","fontSize":"16px"}} onClick={()=> handleEditRow(record)}/></Link>
+        <><DeleteFilled style={{"color":"red","fontSize":"16px"}} onClick={() =>handelDeleteRow(record)}/></>
+        <><EditFilled style={{"color":"blue","fontSize":"16px"}} onClick={()=> handleEditRow(record)}/></>
       </Space>
     ),
   },
