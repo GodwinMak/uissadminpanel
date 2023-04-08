@@ -64,7 +64,7 @@ const navigate = useNavigate();
     (row)=>{
       // setRowData(row);
       localStorage.setItem('userEditData', JSON.stringify(row.key));
-      navigate("/dashboardx/editleader")
+      navigate("/dashboard/editleader")
   },[])
  
   const columns = [
