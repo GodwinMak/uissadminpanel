@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Table,  Space, Button, Input } from 'antd';
-import {DeleteFilled,EditFilled,SearchOutlined} from '@ant-design/icons';
+import {DeleteFilled,SearchOutlined} from '@ant-design/icons';
 import {AiOutlineUserAdd}  from "react-icons/ai"
 import axios from 'axios';
 import DefaultPic from "../../assets/images/defaultPic.png"
@@ -62,12 +62,7 @@ const naviagate = useNavigate();
         }
       })
   },[])
-  const handleEditRow = React.useCallback(
-    (row)=>{
-      // setRowData(row);
-      localStorage.setItem('userEditData', JSON.stringify(row.key));
-      naviagate("/dashboard/editUser")
-  },[])
+  
 const columns = [
     {
         dataIndex: 'image',
