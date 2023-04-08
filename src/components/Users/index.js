@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Table,  Space, Button, Input } from 'antd';
 import {DeleteFilled,SearchOutlined} from '@ant-design/icons';
 import {AiOutlineUserAdd}  from "react-icons/ai"
@@ -10,7 +10,6 @@ import "../../assets/css/styles.css";
 
 function Users(){
 
-const naviagate = useNavigate();
   const [userData , setUserData] = useState([]);
   const[ind, setIndex ] = useState(0);
   const [totalPages, setTotalPages] = useState(1);
