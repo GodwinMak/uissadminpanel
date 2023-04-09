@@ -48,7 +48,7 @@ const SideNav = () => {
             </p>
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item  menu-open">
           <Link  className="nav-link">
             <TbUsers className="nav-icon" />
             <p>
@@ -70,7 +70,7 @@ const SideNav = () => {
             </li>
           </ul>
         </li>
-        <li className="nav-item">
+        <li className="nav-item  menu-open">
           <Link  className="nav-link">
             <FaUsers className="nav-icon" />
             <p>
@@ -92,7 +92,7 @@ const SideNav = () => {
             </li>
           </ul>
         </li>
-        <li className="nav-item">
+        <li className="nav-item  menu-open">
           <Link  className="nav-link">
             <SlRocket className="nav-icon" />
             <p>
@@ -114,7 +114,7 @@ const SideNav = () => {
             </li>
           </ul>
         </li>
-        <li className="nav-item">
+        <li className="nav-item  menu-open">
           <Link  className="nav-link">
             <SlCalender className="nav-icon" />
             <p>
